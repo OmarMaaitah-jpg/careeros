@@ -4,7 +4,7 @@ public class Skill {
 
     private int progress;
 
-    public Skill (String name,int progress)
+    public Skill (String name, int progress)
     {
         if(progress<0 || progress>100){
         throw new IllegalArgumentException("Progress must be between 0 and 100");
@@ -20,13 +20,13 @@ public class Skill {
     }
     public void updateProgress(int newProgress){
 
-        if(newProgress<0 || newProgress>100){
+        if(newProgress <0 || newProgress >100){
                 throw new IllegalArgumentException("Progress must be between 0 and 100");
             }
             this.progress = newProgress;
     }
-        public void PrintInfo()
+        public void printInfo()
         {
-            System.out.println("Skill: " + getName()+"|| progress: "+getProgress());
+            System.out.println("Skill: " + getName()+"| progress: "+getProgress() + " %");
         }
 }
