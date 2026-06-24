@@ -41,3 +41,23 @@ What I practiced today:
 * Returning boolean values with `isDone()`
 * Testing object behavior in `Main.java`
 * Git workflow: add, commit, and push
+
+
+
+### Day 3 — CareerProject Model
+
+Today, I added the `CareerProject` class, which connects multiple tasks together under one project.
+
+The main idea was to move from simple individual objects to a more realistic structure where a project can contain a list of tasks. I used `List<CareerTask>` to store the tasks inside the project, and added methods to add new tasks, count all tasks, count completed tasks, and calculate the project progress automatically.
+
+I also tested the class inside `Main.java` by creating a CareerOS project, adding three tasks to it, completing two of them, and printing a project summary. The progress was calculated based on the completed tasks, not written manually.
+
+What I practiced today:
+
+* Using `ArrayList` and `List`
+* Storing objects inside another object
+* Looping through a list of tasks
+* Counting completed tasks
+* Calculating progress from project data
+* Testing class behavior in `Main.java`
+* Git workflow: add, commit, and push
