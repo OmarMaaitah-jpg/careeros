@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // Skill Test:
+    // Skill Test:
 
         Skill javaSkill = new Skill("Java", 60);
 
@@ -10,7 +10,7 @@ public class Main {
 
         javaSkill.printInfo();
 
-        // CareerTask test:
+    // CareerTask test:
 
         CareerTask task1 = new CareerTask("Create Career Task Class");
         task1.printInfo();
@@ -27,7 +27,7 @@ public class Main {
 
         System.out.println("Is Task Done? " + task1.isDone());
 
-        //Career project test:
+    // Career project test:
 
         CareerProject careerOSProject = new CareerProject("CareerOS Backend");
 
@@ -45,5 +45,12 @@ public class Main {
         careerOSProject.addTask(task4);
 
         careerOSProject.printSummary();
+
+    // UserProfile test:
+
+        UserProfile profile = new UserProfile("Omar", "Java Backend Developer");
+        profile.addSkill(javaSkill);
+        profile.addProject(careerOSProject);
+        profile.printSummary();
     }
 }
