@@ -61,3 +61,25 @@ What I practiced today:
 * Calculating progress from project data
 * Testing class behavior in `Main.java`
 * Git workflow: add, commit, and push
+
+
+
+### Day 4 — UserProfile Model
+
+Today, I added the `UserProfile` class to represent the user inside CareerOS.
+
+The goal of this step was to connect the previous parts of the system together. A user now has a name, a career goal, a list of skills, and a list of career projects. This made the project structure feel more complete because CareerOS can now represent a real user with their learning progress and projects.
+
+I also practiced the `List` concept again by using `List<Skill>` and `List<CareerProject>`. This helped reinforce the idea that one object can contain a collection of other objects.
+
+I tested the class inside `Main.java` by creating a user profile, adding a skill, adding a project, and printing a simple user summary.
+
+What I practiced today:
+
+* Creating a user profile model
+* Using `List<Skill>`
+* Using `List<CareerProject>`
+* Adding objects into lists
+* Connecting multiple classes together
+* Testing the full structure in `Main.java`
+* Git workflow: add, commit, and push
