@@ -83,3 +83,28 @@ What I practiced today:
 * Connecting multiple classes together
 * Testing the full structure in `Main.java`
 * Git workflow: add, commit, and push
+
+
+
+
+
+### Day 5 — CareerDashboard
+
+Today, I added the first simple dashboard for CareerOS.
+
+Before creating the dashboard, I improved the `UserProfile` class so it can calculate useful summary data across all projects, such as total tasks, completed tasks, and overall progress. This made the user profile more meaningful because it can now summarize the user's learning progress instead of only storing skills and projects.
+
+I also created the `CareerDashboard` class, which takes a `UserProfile` and displays a clean dashboard summary. This helped separate the idea of storing data from the idea of presenting it.
+
+I tested everything inside `Main.java` by creating a user profile, adding a skill and a project, then printing the dashboard.
+
+What I practiced today:
+
+* Aggregating data from multiple objects
+* Looping through a list of projects
+* Calculating total tasks across projects
+* Calculating completed tasks across projects
+* Calculating overall progress
+* Separating data/model logic from display/dashboard logic
+* Testing the dashboard in `Main.java`
+* Git workflow: add, commit, and push
