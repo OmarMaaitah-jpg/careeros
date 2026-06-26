@@ -48,9 +48,11 @@ public class Main {
 
     // UserProfile test:
 
-        UserProfile profile = new UserProfile("Omar", "Java Backend Developer");
-        profile.addSkill(javaSkill);
-        profile.addProject(careerOSProject);
-        profile.printSummary();
+        UserProfile profile1 = new UserProfile("Omar", "Java Backend Developer");
+        profile1.addSkill(javaSkill);
+        profile1.addProject(careerOSProject);
+        // CareerDashboard test:
+        CareerDashboard dashboard = new CareerDashboard(profile1);
+        dashboard.printDashboard();
     }
 }

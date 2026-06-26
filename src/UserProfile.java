@@ -38,10 +38,38 @@ public class UserProfile {
         return projects.size();
     }
     
+    public int getTotalTasksCount() {
+        int cnt = 0;
+
+        for (int i = 0; i < projects.size(); i++) {
+           cnt = cnt + projects.get(i).getTotalTasksCount();
+        }
+        return cnt;
+    }
+
+    public int getCompletedTasksCount() {
+        int cnt = 0;
+        for (int i = 0; i<projects.size(); i++) {
+            cnt = cnt + projects.get(i).getCompletedTasksCount();
+        }
+        return cnt;
+    }
+
+    public int calculateOverallProgress() {
+
+        if (getTotalTasksCount() == 0) {
+            return 0;
+        }
+        return getCompletedTasksCount() * 100 / getTotalTasksCount();
+    }
+
     public void printSummary() {
         System.out.println("User: " + getName());
         System.out.println("Goal: " + getCareerGoal());
         System.out.println("Skills: " + getSkillsCount());
         System.out.println("Projects: " + getProjectsCount());
+        System.out.println("Total Tasks: " + getTotalTasksCount());
+        System.out.println("Completed Tasks: " + getCompletedTasksCount());
+        System.out.println("Overall Progress: " + calculateOverallProgress() + "%");
     }
 }
